@@ -145,24 +145,33 @@ h2 {
 
 /* search */
 #search {
+    background-size: cover;
+    background-repeat: no-repeat;
     background-image: url(img/bg-search.svg);
     height: 100vh;
-    background-repeat: no-repeat;
     background-size: cover;
     animation: slide 40s infinite;
 }
 @keyframes slide {
     25% {
         background: url(img/bg-search1.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
     }
     50% {
         background: url(img/bg-search2.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
     }
     75% {
         background: url(img/bg-search3.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
     }
     100% {
         background: url(img/bg-search.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 }
 #search h2 {
