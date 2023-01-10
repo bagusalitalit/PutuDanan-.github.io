@@ -1,0 +1,422 @@
+:root {
+    --pr-color : #227C70;
+}
+
+* {
+    z-index: 2;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #E6E2C3;
+}
+
+/* navbar */
+.navbar {
+    z-index: 3;
+}
+.navbar-brand {
+    font-weight: 700;
+    font-size: 32px;
+}
+.navbar-brand img {
+    width: 50px;
+}
+.img-hero {
+    z-index: 1;
+}
+.nav-link.active {
+    font-weight: 600;
+    font-size: 16px;
+}
+.button-secondary {
+    width: 133px;
+    height: 40px;
+    background-color: #fff;
+    color: var(--pr-color);
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 3px;
+}
+.button-primary {
+    width: 133px;
+    height: 40px;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 3px;
+}
+
+/* home */
+#hero {
+    background: linear-gradient(160deg, var(--pr-color), #1C315E);
+    height: 100vh;
+    width: 100%;
+}
+.img-hero img {
+    height: 100%;
+}
+.hero-tagline h1 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 72px;
+}
+.hero-tagline p {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 60px;
+    margin-top: 20px;
+    line-height: 30px;
+    width: 85%;
+}
+.button-lg-primary {
+    width: 237px;
+    height: 70px;
+    background-color: #fff;
+    color: var(--pr-color);
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+#hero p{
+    text-align: justify;
+}
+
+/* about */
+#layanan {
+    padding: 100px 0;   
+}
+h2 {
+    font-size: 48px;
+    font-weight: 500;
+    color: var(--pr-color);
+}
+.sub-title {
+    font-size: 18px;
+    color: #1C315E;
+}
+.circle-icon {
+    width: 70px;
+    height: 70px;
+}
+.card-layanan {
+    width: 100%;
+    height: 313px;
+    border-radius: 5px;
+    background: #fff;
+    padding: 40px;
+    box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.05);
+    transition: all .2s ease-in;
+}
+.card-layanan h3 {
+    color: #1C315E;
+    font-size: 24px;
+    transition: all .2s ease-in;
+}
+.card-layanan p {
+    color: #1C315E;
+    font-size: 14px;
+    transition: all .3s ease-in;
+}
+.card-layanan:hover {
+    width: 100%;
+    height: 313px;
+    border-radius: 5px;
+    background: linear-gradient(160deg, var(--pr-color), #1C315E);
+    padding: 40px;
+    box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.05);
+    transition: all .2s ease-in;
+}
+.card-layanan:hover h3 {
+    color: #fff;
+    font-size: 24px;
+    transition: all .2s ease-in;
+}
+.card-layanan:hover p {
+    color: #fff;
+    font-size: 14px;
+    transition: all .2s ease-in;
+}
+
+/* search */
+#search {
+    background-image: url(img/bg-search.svg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: slide 40s infinite;
+}
+@keyframes slide {
+    25% {
+        background: url(img/bg-search1.svg);
+    }
+    50% {
+        background: url(img/bg-search2.svg);
+    }
+    75% {
+        background: url(img/bg-search3.svg);
+    }
+    100% {
+        background: url(img/bg-search.svg);
+    }
+}
+#search h2 {
+    font-size: 48px;
+    line-height: 72px;
+    color: #fff;
+    text-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+}
+#search p {
+    font-size: 24px;
+    color: #fff;
+    text-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+}
+.input-cari {
+    height: 88px;
+}
+.input-cari:focus {
+    border: none;
+}
+.input-cari .button-secondary {
+    width: 200px;
+    height: 88px;
+    background-size: rgba(255, 255, 255, 0.8);
+    color: var(--pr-color);
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    border-radius: 0 0 0 10px;
+}
+.input-cari .button-primary {
+    height: 88px;
+    background-color: var(--pr-color);
+    color: #fff;
+    border: none;
+    font-size: 36px;
+    font-weight: 500;
+    border-radius: 0 10px 0 10px;
+}
+.nav-tabs {
+    border: none;
+}
+.nav-tabs .nav-link {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 0 0 0 0;
+    color: #1C315E;
+    border: none;
+}
+.nav-tabs .nav-link.active {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: var(--pr-color);
+    border-radius: 0 9px 0 0;
+    font-weight: 500;
+}
+
+/* akomodasi */
+.card {
+    height: 460px;
+    width: 95%;
+    border: none;
+}
+.card-body h4 {
+    color: #1C315E;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 0.8rem;
+}
+.card-body p {
+    color: #252525;
+    font-size: 14px;
+}
+.card:hover {
+    background: linear-gradient(160deg, var(--pr-color), #1C315E);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    transition: all .3s ease-in;
+}
+.card:hover .card-body h4 {
+    color: #fff;
+    transition: all .3s ease-in-out;
+}
+.card:hover .card-body p {
+    color: #fff;
+    transition: all .3s ease-in-out;
+}
+.card-fasilitas {
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 10px;
+}
+.card-fasilitas span {
+    font-weight: 500;
+    margin-top: 18px;
+    color: #1C315E;
+}
+.card-fasilitas p {
+    font-size: 12px;
+    color: #1C315E;
+}
+
+/* objek */
+.button-fitur {
+    width: 238px;
+    height: 63px;
+    background-color: var(--pr-color);
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+}
+#fitur h2 {
+    font-size: 48px;
+    font-weight: 500;
+}
+.card-fitur h5 {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 600;
+}
+.card-fitur span {
+    color: #fff;
+    font-size: 14px;
+}
+.card-fitur h6 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+}
+.card-fitur button {
+    background-color: var(--pr-color);
+    color: #fff;
+    border: none;
+    width: 150px;
+    height: 45px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.card-fitur .overlay {
+    background-color: rgba(0, 0, 0, 0);
+    opacity: 0;
+    transition: all .3s ease-in-out;
+}
+.card-fitur .overlay:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 1;
+}
+.button-arrow-left {
+    border: none;
+    border-radius: 50%;
+    width: 61px;
+    height: 61px;
+    background-color: var(--pr-color);
+    padding: 0;
+}
+.button-arrow-right {
+    border: none;
+    border-radius: 50%;
+    width: 61px;
+    height: 61px;
+    background-color: var(--pr-color);
+    padding: 0;
+}
+
+/* kontak */
+#kontak {
+    background-image: url(img/kontak-bg.svg);
+    margin-top: 158px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#kontak .overlay {
+    background: rgba(0, 0, 0, 0.5);
+}
+#kontak .container {
+    padding: 148px 0 148px 0;
+}
+#kontak h3 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 60px;
+}
+#kontak h6 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    margin: 19px 0 14px 0;
+}
+.kontak a {
+    color: #fff;
+    font-size: 16px;
+    line-height: 18px;
+    text-decoration: none;
+    margin-left: 18px;
+}
+.card-kontak {
+    width: 100%;
+    height: 445px;
+    background-color: #fff;
+    padding: 52px 48px;
+}
+.card-kontak h2 {
+    color: var(--pr-color);
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 60px;
+    text-align: center;
+    margin-bottom: 21px;
+}
+.form-controls {
+    background: #d9d9d9;
+    height: 75px;
+}
+.form-floating label {
+    font-size: 16px;
+    line-height: 18px;
+    color: #717171;
+}
+.button-kontak {
+    width: 100%;
+    height: 75px;
+    background: var(--pr-color);
+    border: none;
+    border-radius: 5px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    color: #fff;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    height: 270px;
+    background: #1C315E;
+}
+.copyright {
+    bottom: 1%;
+    color: #d1d1d1;
+    font-size: 14px;
+    line-height: 21px;
+}
+footer a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    text-decoration: none;
+}
+footer img {
+    width: 40px;
+}
+
+.logo-nusa {
+    font-size: 32px;
+}
